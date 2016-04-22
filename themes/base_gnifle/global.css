@@ -1,0 +1,51 @@
+#content .content-inner {
+  margin-right: auto;
+  margin-left: auto; }
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  border: 0; }
+
+#content .content-inner {
+  margin-right: auto;
+  margin-left: auto; }
+
+@media all and (max-width: 768px) {
+  .openNav #page {
+    -webkit-transform: translate3d(80%, 0, 0);
+    -ms-transform: translate3d(80%, 0, 0);
+    transform: translate3d(80%, 0, 0);
+    -webkit-transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    left: 0; }
+
+  #page {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    left: 0; }
+
+  nav[role='main-navigation'] {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    left: -80%;
+    top: 0;
+    background: #777; } }
+#page > * {
+  width: 100%; }
+
+#content .content-inner {
+  width: 100%; }
+  @media all and (max-width: 1200px) {
+    #content .content-inner {
+      width: 100%; } }
+
+/*# sourceMappingURL=global.css.map */

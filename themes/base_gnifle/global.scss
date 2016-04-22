@@ -1,0 +1,44 @@
+@import "styles/helpers/helpers";
+@import "styles/helpers/base-colors";
+@import "styles/helpers/responsive-breakpoints";
+@import "styles/helpers/constants";
+@import "styles/helpers/reset";
+@import "styles/responsive/_off-canvas-menu";
+
+#page {
+
+	> * {
+		width: 100%;
+	}
+
+	header[role="banner"] {
+
+	}
+
+	nav[role="main-navigation"] {
+
+	}
+
+	footer[role="footer"] {
+
+	}
+
+}
+
+#content {
+
+	.content-inner {
+		@extend %centerHorizontally;
+		width: $content-width;
+
+		main {
+
+		}
+
+		@media all and ( max-width: $resp-laptop-1200 ) {
+			width: 100%;
+		}
+
+	}
+
+}

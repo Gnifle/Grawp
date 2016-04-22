@@ -1,0 +1,30 @@
+@import "../helpers/imports";
+
+$menu-width: 80%;
+$menu-animation-speed: .5s;
+$menu-animation-timing-show: $easeOutQuint;
+$menu-animation-timing-hide: $menu-animation-timing-show;
+
+@media all and (max-width: 768px) {
+
+	.openNav #page {
+		@include transform( translate3d( $menu-width, 0, 0 ) );
+		@include transition( transform $menu-animation-speed $menu-animation-timing-show );
+		left: 0;
+	}
+
+	#page {
+		@include transform( translate3d( 0, 0, 0 ) );
+		@include transition( transform $menu-animation-speed $menu-animation-timing-hide );
+		left: 0;
+	}
+
+	nav[role='main-navigation'] {
+		@include size( $menu-width, 100vh );
+		position: absolute;
+		left: -$menu-width;
+		top: 0;
+		background: #777;
+	}
+
+}
